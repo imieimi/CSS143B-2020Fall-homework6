@@ -39,6 +39,9 @@ public abstract class IdentityPerfTest {
     @Test
     public void runTest() {
         // timing method based on https://howtodoinjava.com/java/date-time/execution-elapsed-time/
+        //initial 15550
+        //changed to 1550000 for my test
+        //return to initial for rest of hw
         for (int i = 5000; i < 15550; i += 5000) {
             // homework
             runTestOfSize(i);
