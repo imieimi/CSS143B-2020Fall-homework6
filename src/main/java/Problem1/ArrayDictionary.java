@@ -52,10 +52,10 @@ public class ArrayDictionary implements Dictionary {
         KVEntry current = entries[hashedKey];
 
         while (current.next != null) {
-            if (current.key.equals(key)) {
+            if (current.key.equals(current.next.key)) {
                 String temp = current.key;
-                key = current.key;
-                current.key = temp;
+                current.key = current.next.key;
+                current.next.key = temp;
                 return;
             }
         }
